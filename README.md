@@ -8,7 +8,8 @@ Four focused tools for the small tasks between the big tasks. Responsive, access
 - **Colour converter** — convert HEX, RGB, and HSL, use a colour picker, and copy values. Includes a live foreground/background contrast checker with WCAG 2.2 AA/AAA text-contrast results.
 - **Markdown preview** — live preview with headings, lists, quotes, emphasis, links, and fenced code blocks. Raw HTML is escaped. This is a lightweight Markdown subset, not full GitHub Flavored Markdown.
 - **Word counter** — words, Unicode characters, estimated sentences, paragraphs, and estimated reading time.
-- Dark and light themes. Only the theme preference is stored. Editor content stays in memory and clears on refresh.
+- **Scratchpad** — open Notes in the top bar to keep one note alongside any tool. Auto-saves in this browser, supports a safe Markdown preview, copying, and `.txt` / `.md` downloads, and confirms before clearing. On mobile it opens as a full-screen panel.
+- Dark and light themes. Tool editor content stays in memory and clears on refresh; the scratchpad and theme preference persist in this browser.
 
 ## Run locally
 
@@ -54,6 +55,8 @@ The contrast checker uses the [W3C relative luminance and contrast guidance](htt
 ## Privacy
 
 All tool processing happens in the browser. No analytics, external fonts, APIs, or third-party scripts are used. The hosting provider receives ordinary page requests. Clipboard access requires a secure context or localhost.
+
+Scratchpad notes use local storage on the current browser and site origin; they do not sync between devices. Avoid storing passwords or API keys. Clearing browser data removes notes. Export a backup when you need to keep a note. If saving fails (for example, storage is disabled or full), the draft remains in memory and the app shows a warning; download it before leaving. Notes changed in another tab trigger a notice instead of replacing your current draft.
 
 ## License
 
