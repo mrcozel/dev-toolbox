@@ -1,7 +1,7 @@
 'use strict';
 (function(){
  const panel=document.querySelector('#scratchpad'),toggle=document.querySelector('#notes-toggle'),editor=document.querySelector('#note-editor'),preview=document.querySelector('#note-preview'),status=document.querySelector('#note-status'),confirmDialog=document.querySelector('#clear-note-dialog');
- const store=Notes.createStore(()=>localStorage),mobile=matchMedia('(max-width:760px)');let open=false,mode='edit';
+ const store=Notes.createStore(()=>localStorage),mobile=matchMedia('(max-width:1100px)');let open=false,mode='edit';
  editor.value=store.read().text;
  function showStatus(result){status.textContent=result.saved?'Saved in this browser':'Not saved · browser storage is unavailable. Download a backup.';status.classList.toggle('error',!result.saved);}
  function update(){showStatus(store.write(editor.value));if(mode==='preview')preview.innerHTML=Toolbox.markdown(editor.value);}
