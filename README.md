@@ -1,6 +1,6 @@
 # Developer Toolbox
 
-Five focused tools for the small tasks between the big tasks. Responsive, accessible, and private by design.
+Six focused tools for the small tasks between the big tasks. Responsive, accessible, and private by design.
 
 [Open the live toolbox](https://mrcozel.github.io/dev-toolbox/)
 
@@ -9,6 +9,7 @@ Five focused tools for the small tasks between the big tasks. Responsive, access
 - **Markdown preview** — live preview with headings, lists, quotes, emphasis, links, and fenced code blocks. Raw HTML is escaped. This is a lightweight Markdown subset, not full GitHub Flavored Markdown.
 - **Word counter** — words, Unicode characters, estimated sentences, paragraphs, and estimated reading time.
 - **Note pad** — a plain-text notepad with multiple auto-saving tabs. Add, rename, switch, and close notes; copy or download the current tab as `.txt` / `.md`. Closing or clearing a note requires confirmation. Existing single notes migrate into the first tab.
+- **URL toolkit** — inspect HTTP(S) URLs, edit duplicate or empty query parameters, encode/decode components or full URLs, and generate QR codes with PNG/SVG export. URLs are processed in memory, never fetched or saved.
 - Dark and light themes. Tool editor content stays in memory and clears on refresh; Note pad tabs and the theme preference persist in this browser.
 
 ## Run locally
@@ -54,7 +55,7 @@ The contrast checker uses the [W3C relative luminance and contrast guidance](htt
 
 ## Privacy
 
-All tool processing happens in the browser. No analytics, external fonts, APIs, or third-party scripts are used. The hosting provider receives ordinary page requests. Clipboard access requires a secure context or localhost.
+All tool processing happens in the browser. No analytics, external fonts, external APIs, or remotely loaded scripts are used. The hosting provider receives ordinary page requests. Clipboard access requires a secure context or localhost.
 
 Note pad tabs, names, content, and the selected tab use local storage on the current browser and site origin; they do not sync between devices. Avoid storing passwords or API keys. Clearing browser data removes notes. Export a backup when you need to keep a note. If saving fails (for example, storage is disabled or full), the draft remains in memory and the app shows a warning; download it before leaving. Notes changed in another tab trigger a notice instead of replacing your current draft.
 
@@ -63,3 +64,7 @@ Note pad tabs, names, content, and the selected tab use local storage on the cur
 MIT — see LICENSE.
 
 
+
+## Bundled QR library
+
+QR codes use qrcode-generator 1.4.4 by Kazuhiko Arase (MIT), bundled in `docs/vendor/qrcode.js`. No external QR service is used. See THIRD_PARTY_NOTICES.md for attribution and license.
