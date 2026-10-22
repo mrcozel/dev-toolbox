@@ -4,7 +4,7 @@ Four focused tools for the small tasks between the big tasks. Responsive, access
 
 [Open the live toolbox](https://mrcozel.github.io/dev-toolbox/)
 
-- **JSON formatter** — format, minify, validate, copy, and download JSON. Two or four space indentation and Ctrl/Cmd + Enter.
+- **JSON formatter** — format, minify, validate, copy, and download JSON. Import a local `.json` file with the file picker or drag-and-drop (up to 5 MB). Failed imports preserve your current work. Two or four space indentation and Ctrl/Cmd + Enter.
 - **Colour converter** — convert HEX, RGB, and HSL, use a colour picker, and copy values. Includes a live foreground/background contrast checker with WCAG 2.2 AA/AAA text-contrast results.
 - **Markdown preview** — live preview with headings, lists, quotes, emphasis, links, and fenced code blocks. Raw HTML is escaped. This is a lightweight Markdown subset, not full GitHub Flavored Markdown.
 - **Word counter** — words, Unicode characters, estimated sentences, paragraphs, and estimated reading time.
@@ -18,7 +18,7 @@ Requires Node.js 18 or newer. No dependency installation or build step.
 node server.cjs
 ```
 
-Open http://127.0.0.1:4173. Run checks with `node --test tests/core.test.cjs`. If npm is installed, `npm start` and `npm test` work too.
+Open http://127.0.0.1:4173. Run all checks with `node --test`. If npm is installed, `npm start` and `npm test` work too.
 
 ## Structure
 
@@ -28,7 +28,22 @@ Open http://127.0.0.1:4173. Run checks with `node --test tests/core.test.cjs`. I
 
 Open an issue describing the problem or feature, create a branch, and submit a focused pull request. Include a brief description and verification steps. Credit real collaborators with a `Co-authored-by` commit trailer when appropriate.
 
-Potential next features: JSON file import, Markdown tables, and automated browser checks.
+### Help build the next feature
+
+- [Markdown tables](https://github.com/mrcozel/dev-toolbox/issues/4) — safe table rendering, inline formatting, and alignment.
+- [Colour palette export](https://github.com/mrcozel/dev-toolbox/issues/5) — collect colours and export CSS or JSON.
+
+Comment on an issue before starting so we can agree on the approach. Keep pull requests focused, add tests for changed behaviour, and include screenshots for visible UI changes.
+
+## Screenshots
+
+### JSON formatter and local file import
+
+![JSON formatter with a local file import area](assets/screenshots/json-formatter.jpg)
+
+### Colour conversion and contrast checking
+
+![Colour converter and WCAG text contrast checker](assets/screenshots/colour-contrast.jpg)
 
 ## GitHub Pages
 
@@ -43,4 +58,5 @@ All tool processing happens in the browser. No analytics, external fonts, APIs, 
 ## License
 
 MIT — see LICENSE.
+
 
