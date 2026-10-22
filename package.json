@@ -1,1 +1,1 @@
-{"name":"dev-toolbox","version":"1.0.0","private":true,"description":"Five browser-local developer tools","scripts":{"test":"node --test","start":"node server.cjs"},"license":"MIT"}
+{"name":"dev-toolbox","version":"1.0.0","private":true,"description":"Six browser-local developer tools","scripts":{"test":"node --test","start":"node server.cjs"},"license":"MIT"}
