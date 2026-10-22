@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Your everyday developer toolkit. Format JSON, convert colours, preview Markdown, and count words. Everything stays in your browser."><title>Developer Toolbox — A little less friction.</title><link rel="stylesheet" href="style.css?v=workspace-notes-2"></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Your everyday developer toolkit. Format JSON, convert colours, preview Markdown, and count words. Everything stays in your browser."><title>Developer Toolbox — A little less friction.</title><link rel="stylesheet" href="style.css?v=tabbed-notes-3"></head>
 <body>
 <aside class="sidebar">
  <a class="brand" href="#json"><span class="brand-icon">⌘</span><span>dev<span class="muted">toolbox</span><small>SMALL TOOLS. BIG FLOW.</small></span></a>
@@ -23,10 +23,12 @@
   <section id="tool" aria-labelledby="tool-title"></section>
 <section id="scratchpad" class="scratchpad" aria-labelledby="notes-title" hidden>
  <div class="notes-heading"><div><span class="eyebrow">YOUR WORKSPACE COMPANION</span><h2 id="notes-title">Scratchpad</h2></div></div>
- <p class="notes-hint">Snippets, TODOs, and thoughts in progress.</p>
- <div class="notes-modes" role="group" aria-label="Note view"><button id="note-edit" class="btn" aria-pressed="true">Edit</button><button id="note-render" class="btn" aria-pressed="false">Markdown preview</button></div>
+ <p class="notes-hint">Your notes, your tabs. Pick up right where you left off.</p>
+ <div class="note-tabbar"><div id="note-tabs" role="tablist" aria-label="Saved notes"></div><button id="note-add" class="btn" aria-label="New note tab">+ New tab</button></div>
+ <div class="note-tab-tools"><label for="note-name">Tab name</label><input id="note-name" type="text" maxlength="80" autocomplete="off"><button id="note-close" class="btn">Close tab</button></div>
+ <div id="note-page" role="tabpanel" tabindex="0">
  <label class="sr-only" for="note-editor">Developer notes</label><textarea id="note-editor" placeholder="What's on your mind?&#10;&#10;- Next step&#10;- A useful snippet&#10;- That bug to investigate" spellcheck="false"></textarea>
- <div id="note-preview" class="preview" aria-label="Note Markdown preview" hidden></div>
+ </div>
  <div id="note-status" class="note-status" role="status" aria-live="polite"></div>
  <div class="notes-actions"><button id="note-copy" class="btn">Copy note</button><button id="note-txt" class="btn">Download .txt</button><button id="note-md" class="btn">Download .md</button><button id="note-clear" class="btn">Clear note</button></div>
  <p class="notes-privacy">Saved in this browser only. Avoid storing passwords or API keys. Clearing browser data removes saved notes. Download a copy to keep a backup.</p>
@@ -35,7 +37,7 @@
  </div>
 </main>
 
-<dialog id="clear-note-dialog" aria-labelledby="clear-note-title"><h2 id="clear-note-title">Clear your note?</h2><p>This removes the saved note from this browser. Download a copy first if you need it.</p><div class="notes-actions"><button id="clear-note-cancel" class="btn" autofocus>Keep note</button><button id="clear-note-confirm" class="btn">Yes, clear note</button></div></dialog>
+<dialog id="clear-note-dialog" aria-labelledby="clear-note-title" aria-describedby="clear-note-description"><h2 id="clear-note-title">Clear this note?</h2><p id="clear-note-description">This clears the text in the current tab.</p><div class="notes-actions"><button id="clear-note-cancel" class="btn" autofocus>Keep note</button><button id="clear-note-confirm" class="btn">Yes, clear note</button></div></dialog>
 <div id="toast" role="status"></div>
-<script src="core.js?v=workspace-notes-2"></script><script src="json-files.js?v=workspace-notes-2"></script><script src="notes.js?v=workspace-notes-2"></script><script src="app.js?v=workspace-notes-2"></script><script src="scratchpad.js?v=workspace-notes-2"></script>
+<script src="core.js?v=tabbed-notes-3"></script><script src="json-files.js?v=tabbed-notes-3"></script><script src="notes.js?v=tabbed-notes-3"></script><script src="app.js?v=tabbed-notes-3"></script><script src="scratchpad.js?v=tabbed-notes-3"></script>
 </body></html>
