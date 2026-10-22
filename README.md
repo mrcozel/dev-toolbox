@@ -1,6 +1,6 @@
 # Developer Toolbox
 
-Four focused tools for the small tasks between the big tasks. Responsive, accessible, and private by design.
+Five focused tools for the small tasks between the big tasks. Responsive, accessible, and private by design.
 
 [Open the live toolbox](https://mrcozel.github.io/dev-toolbox/)
 
@@ -8,7 +8,7 @@ Four focused tools for the small tasks between the big tasks. Responsive, access
 - **Colour converter** — convert HEX, RGB, and HSL, use a colour picker, and copy values. Includes a live foreground/background contrast checker with WCAG 2.2 AA/AAA text-contrast results.
 - **Markdown preview** — live preview with headings, lists, quotes, emphasis, links, and fenced code blocks. Raw HTML is escaped. This is a lightweight Markdown subset, not full GitHub Flavored Markdown.
 - **Word counter** — words, Unicode characters, estimated sentences, paragraphs, and estimated reading time.
-- **Scratchpad** — open Notes in the top bar to keep one note alongside any tool. Auto-saves in this browser, supports a safe Markdown preview, copying, and `.txt` / `.md` downloads, and confirms before clearing. On mobile it opens as a full-screen panel.
+- **Scratchpad** — select Scratchpad under Your workspace to open your saved note. Auto-saves in this browser, supports a safe Markdown preview, copying, and `.txt` / `.md` downloads, and confirms before clearing. The same workspace view works on desktop and mobile.
 - Dark and light themes. Tool editor content stays in memory and clears on refresh; the scratchpad and theme preference persist in this browser.
 
 ## Run locally
