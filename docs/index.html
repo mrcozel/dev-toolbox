@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Your everyday developer toolkit. Format JSON, convert colours, preview Markdown, and count words. Everything stays in your browser."><title>Developer Toolbox — A little less friction.</title><link rel="stylesheet" href="style.css?v=tabbed-notes-3"></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Your everyday developer toolkit. Format JSON, convert colours, preview Markdown, and count words. Everything stays in your browser."><title>Developer Toolbox — A little less friction.</title><link rel="stylesheet" href="style.css?v=notepad-4"></head>
 <body>
 <aside class="sidebar">
  <a class="brand" href="#json"><span class="brand-icon">⌘</span><span>dev<span class="muted">toolbox</span><small>SMALL TOOLS. BIG FLOW.</small></span></a>
@@ -10,7 +10,7 @@
   <a href="#colour" data-tool="colour"><span class="nav-icon">◐</span><span>Colour converter<small>Find the right expression</small></span><span class="nav-arrow">↗</span></a>
   <a href="#markdown" data-tool="markdown"><span class="nav-icon">M↓</span><span>Markdown preview<small>From plain text to polished</small></span><span class="nav-arrow">↗</span></a>
   <a href="#words" data-tool="words"><span class="nav-icon">Aa</span><span>Word counter<small>Every word accounted for</small></span><span class="nav-arrow">↗</span></a>
-  <a href="#scratchpad" data-tool="scratchpad"><span class="nav-icon">✎</span><span>Scratchpad<small>Your thoughts, kept close</small></span><span class="nav-arrow">↗</span></a>
+  <a href="#notepad" data-tool="scratchpad"><span class="nav-icon">✎</span><span>NotePad<small>Your thoughts, kept close</small></span><span class="nav-arrow">↗</span></a>
  </nav>
  <div class="sidebar-bottom"><div class="privacy-icon">♧</div><strong>Your work stays yours.</strong><p>No uploads. No accounts.<br>Just you and your browser.</p><span class="local-dot"></span> Runs locally on your device</div>
 </aside>
@@ -22,7 +22,7 @@
   <div class="divider"></div>
   <section id="tool" aria-labelledby="tool-title"></section>
 <section id="scratchpad" class="scratchpad" aria-labelledby="notes-title" hidden>
- <div class="notes-heading"><div><span class="eyebrow">YOUR WORKSPACE COMPANION</span><h2 id="notes-title">Scratchpad</h2></div></div>
+ <div class="notes-heading"><div><span class="eyebrow">YOUR WORKSPACE COMPANION</span><h2 id="notes-title">NotePad</h2></div></div>
  <p class="notes-hint">Your notes, your tabs. Pick up right where you left off.</p>
  <div class="note-tabbar"><div id="note-tabs" role="tablist" aria-label="Saved notes"></div><button id="note-add" class="btn" aria-label="New note tab">+ New tab</button></div>
  <div class="note-tab-tools"><label for="note-name">Tab name</label><input id="note-name" type="text" maxlength="80" autocomplete="off"><button id="note-close" class="btn">Close tab</button></div>
@@ -39,5 +39,5 @@
 
 <dialog id="clear-note-dialog" aria-labelledby="clear-note-title" aria-describedby="clear-note-description"><h2 id="clear-note-title">Clear this note?</h2><p id="clear-note-description">This clears the text in the current tab.</p><div class="notes-actions"><button id="clear-note-cancel" class="btn" autofocus>Keep note</button><button id="clear-note-confirm" class="btn">Yes, clear note</button></div></dialog>
 <div id="toast" role="status"></div>
-<script src="core.js?v=tabbed-notes-3"></script><script src="json-files.js?v=tabbed-notes-3"></script><script src="notes.js?v=tabbed-notes-3"></script><script src="app.js?v=tabbed-notes-3"></script><script src="scratchpad.js?v=tabbed-notes-3"></script>
+<script src="core.js?v=notepad-4"></script><script src="json-files.js?v=notepad-4"></script><script src="notes.js?v=notepad-4"></script><script src="app.js?v=notepad-4"></script><script src="scratchpad.js?v=notepad-4"></script>
 </body></html>
