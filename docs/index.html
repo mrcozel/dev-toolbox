@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Your everyday developer toolkit. Format JSON, convert colours, preview Markdown, and count words. Everything stays in your browser."><title>Developer Toolbox — A little less friction.</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<aside class="sidebar">
+ <a class="brand" href="#json"><span class="brand-icon">⌘</span><span>dev<span class="muted">toolbox</span><small>SMALL TOOLS. BIG FLOW.</small></span></a>
+ <div class="nav-caption">YOUR WORKSPACE <span>04</span></div>
+ <nav aria-label="Developer tools">
+  <a href="#json" data-tool="json"><span class="nav-icon">{ }</span><span>JSON formatter<small>Make sense of your data</small></span><span class="nav-arrow">↗</span></a>
+  <a href="#colour" data-tool="colour"><span class="nav-icon">◐</span><span>Colour converter<small>Find the right expression</small></span><span class="nav-arrow">↗</span></a>
+  <a href="#markdown" data-tool="markdown"><span class="nav-icon">M↓</span><span>Markdown preview<small>From plain text to polished</small></span><span class="nav-arrow">↗</span></a>
+  <a href="#words" data-tool="words"><span class="nav-icon">Aa</span><span>Word counter<small>Every word accounted for</small></span><span class="nav-arrow">↗</span></a>
+ </nav>
+ <div class="sidebar-bottom"><div class="privacy-icon">♧</div><strong>Your work stays yours.</strong><p>No uploads. No accounts.<br>Just you and your browser.</p><span class="local-dot"></span> Runs locally on your device</div>
+</aside>
+<main>
+ <header class="topbar"><span>Workspace <span class="slash">/</span> <span id="breadcrumb">JSON formatter</span></span><button id="theme" class="icon-button" aria-label="Switch to light theme" title="Change theme">☀</button></header>
+ <div class="workspace">
+  <div class="eyebrow"><span class="local-dot"></span> A LITTLE LESS FRICTION.</div>
+  <div class="page-title"><div><h1>Your everyday dev toolkit<span>.</span></h1><p>Small, thoughtful tools to keep you in your flow.</p></div><span class="version">V.01 / THE ESSENTIALS</span></div>
+  <div class="divider"></div>
+  <section id="tool" aria-labelledby="tool-title"></section>
+  <footer><span>Built for the little things between the big things.</span><span>100% browser-based <span class="footer-mark">↗</span></span></footer>
+ </div>
+</main><div id="toast" role="status"></div>
+<script src="core.js"></script><script src="app.js"></script>
+</body></html>
