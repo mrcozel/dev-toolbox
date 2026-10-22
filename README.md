@@ -2,8 +2,10 @@
 
 Four focused tools for the small tasks between the big tasks. Responsive, accessible, and private by design.
 
+[Open the live toolbox](https://mrcozel.github.io/dev-toolbox/)
+
 - **JSON formatter** — format, minify, validate, copy, and download JSON. Two or four space indentation and Ctrl/Cmd + Enter.
-- **Colour converter** — convert HEX, RGB, and HSL, use a colour picker, and copy values.
+- **Colour converter** — convert HEX, RGB, and HSL, use a colour picker, and copy values. Includes a live foreground/background contrast checker with WCAG 2.2 AA/AAA text-contrast results.
 - **Markdown preview** — live preview with headings, lists, quotes, emphasis, links, and fenced code blocks. Raw HTML is escaped. This is a lightweight Markdown subset, not full GitHub Flavored Markdown.
 - **Word counter** — words, Unicode characters, estimated sentences, paragraphs, and estimated reading time.
 - Dark and light themes. Only the theme preference is stored. Editor content stays in memory and clears on refresh.
@@ -26,7 +28,13 @@ Open http://127.0.0.1:4173. Run checks with `node --test tests/core.test.cjs`. I
 
 Open an issue describing the problem or feature, create a branch, and submit a focused pull request. Include a brief description and verification steps. Credit real collaborators with a `Co-authored-by` commit trailer when appropriate.
 
-Potential next features: JSON file import, Markdown tables, colour contrast checker, and automated browser checks.
+Potential next features: JSON file import, Markdown tables, and automated browser checks.
+
+## GitHub Pages
+
+The live site publishes from `main` → `/docs`. Merging a pull request that changes that folder automatically triggers a new Pages deployment. No build step is needed.
+
+The contrast checker uses the [W3C relative luminance and contrast guidance](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum). Pass/fail results use unrounded ratios; the displayed ratio is rounded to two decimal places. The tool evaluates opaque text colours, not overall page accessibility.
 
 ## Privacy
 
